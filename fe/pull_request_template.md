@@ -1,21 +1,21 @@
-##Task Link
+## Task Link
 
 - https://app.asana.com/0/1202720049437748/1202734132146242/f
 
-##Commands
+## Commands
 
 - npm start
 
-##Pre-conditions
+## Pre-conditions
 
 - The Frontend developer must be in the fe folder.
 
-##Expected Output
+## Expected Output
 
 - Run a freshly made React Application.
 
-##Notes
+## Notes
 
 - None
 
-##Screenshots
+## Screenshots
