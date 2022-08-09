@@ -24,7 +24,7 @@ class Users(models.Model):
 class Daily_reports(models.Model):
     user_id = models.ForeignKey(Users, on_delete=models.CASCADE)
     progress = models.TextField()
-    problems = models.TextField(default=0)
+    problems = models.TextField()
     learnings = models.TextField()
     plans = models.TextField()
     date_created = models.DateTimeField(auto_now=True)
