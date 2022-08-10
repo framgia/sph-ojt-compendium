@@ -1,31 +1,34 @@
-html, body, #root, .App {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-  }
-#main{
-  position:fixed;
-  width:100%;
-  height:100%;
-  left:0;
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
   top: 0;
-} 
-.flexbox{
+}
+.flexbox {
   margin-left: auto;
   margin-right: auto;
   height: 1024px;
   width: 1440px;
-} 
-.font{
+}
+.font {
   font-size: 50px;
   font-weight: bold;
 }
-.primary{
+.primary {
   text-align: left;
   padding-top: 50px;
   padding-left: 80px;
 }
-.box{
+.box {
   margin-left: auto;
   margin-right: auto;
   border: 2px solid #000000;
@@ -36,64 +39,62 @@ html, body, #root, .App {
   /* height: 780px; */
   border-radius: 20px;
 }
-.text2{
+.text2 {
   font-size: 20px;
   font-weight: bolder;
   padding-left: 55px;
   padding-top: 50px;
   text-align: left;
 }
-.text3{
+.text3 {
   font-size: 20px;
   font-weight: bolder;
   padding-left: 55px;
   padding-top: 65px;
   text-align: left;
 }
-.text{
+.text {
   font-size: 20px;
   font-weight: bolder;
   padding-left: 55px;
   text-align: left;
 }
-.button_submit{
+.button_submit {
   width: 150.25px;
   height: 46.49px;
   border-radius: 5px;
   text-align: center;
   font-size: 50px;
   font-weight: bolder;
-   margin-top: 20px; 
+  margin-top: 20px;
   margin-left: 1070px;
   margin-bottom: 30px;
 }
-.date_input{
-   float: left; 
-   padding-left: 60px;
+.date_input {
+  float: left;
+  padding-left: 60px;
 }
 
-.date_css{
+.date_css {
   font-size: 12px;
   height: 63px;
   width: 454px;
   border-radius: 10px;
   padding-left: -72px;
 }
-.ui.form textarea{
+.ui.form textarea {
   margin-left: auto;
   margin-right: auto;
   font-size: 12px;
   height: 63px;
   width: 1164px;
   border-radius: 10px;
-  
 }
-.button_back{
+.button_back {
   float: left;
   padding-left: 25px;
-  padding-top: 10px; 
- 
+  padding-top: 10px;
 }
-.button_font{
+.button_font {
   font-weight: bold;
 }
