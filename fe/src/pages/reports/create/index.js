@@ -1,5 +1,5 @@
 import React from "react";
-import "./StyleCreate.css";
+import "./style.css";
 import {
   Button,
   Divider,
