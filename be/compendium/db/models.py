@@ -31,3 +31,7 @@ class Daily_reports(models.Model):
     last_updated = models.DateTimeField(auto_now=True)
     date_deleted = models.DateTimeField(auto_now=True)
     rate_for_value_delivered = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.date_created
+        
