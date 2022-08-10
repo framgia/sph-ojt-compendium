@@ -1,7 +1,6 @@
 import "./App.css";
-import CreateReport from "./pages/reports/create";
+import CreateReport from "./pages/Comments/Create/CommentCreate";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 function App() {
   return (
     <Router>
@@ -14,5 +13,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

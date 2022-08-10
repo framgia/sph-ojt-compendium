@@ -13,7 +13,7 @@ body,
   left: 0;
   top: 0;
 }
-.flexbox {
+.FlexBox {
   margin-left: auto;
   margin-right: auto;
   height: 1024px;
@@ -31,35 +31,37 @@ body,
 .box {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
   border: 2px solid #000000;
   background-color: white;
-  width: 1280px;
+  width: 1285px;
   min-height: xxx;
   overflow: hidden;
-  /* height: 780px; */
   border-radius: 20px;
 }
-.text2 {
+.text{ /*progress*/
   font-size: 20px;
   font-weight: bolder;
-  padding-left: 55px;
+  padding-left: 5px;
+  padding-top: 60px;
+  text-align: left;
+}
+ .text2{  /*date*/
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 5px;
   padding-top: 50px;
   text-align: left;
 }
-.text3 {
+.text3 { /*problems, learnings, plan*/
   font-size: 20px;
   font-weight: bolder;
-  padding-left: 55px;
-  padding-top: 65px;
+  padding-left: 5px;
+  padding-top: 15px;
   text-align: left;
 }
-.text {
-  font-size: 20px;
-  font-weight: bolder;
-  padding-left: 55px;
-  text-align: left;
-}
-.button_submit {
+.ButtonSubmit {
   width: 150.25px;
   height: 46.49px;
   border-radius: 5px;
@@ -67,34 +69,18 @@ body,
   font-size: 50px;
   font-weight: bolder;
   margin-top: 20px;
-  margin-left: 1070px;
+  margin-left: 1030px;
   margin-bottom: 30px;
 }
-.date_input {
+.DateInput {
   float: left;
-  padding-left: 60px;
+  padding-left: 10px;
 }
-
-.date_css {
-  font-size: 12px;
-  height: 63px;
-  width: 454px;
-  border-radius: 10px;
-  padding-left: -72px;
-}
-.ui.form textarea {
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 12px;
-  height: 63px;
-  width: 1164px;
-  border-radius: 10px;
-}
-.button_back {
+.ButtonBack {
   float: left;
   padding-left: 25px;
   padding-top: 10px;
 }
-.button_font {
+.ButtonFont {
   font-weight: bold;
 }
