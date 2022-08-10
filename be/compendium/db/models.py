@@ -6,11 +6,13 @@ from django.db import models
 
 
 class Accounts(models.Model):
+    id = models.AutoField(primary_key=True)
     email = models.EmailField(max_length=50)
     password = models.CharField(max_length=50)
 
 
 class Users(models.Model):
+    id = models.AutoField(primary_key=True)
     account_id = models.ForeignKey(Accounts, on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     middle_name = models.CharField(max_length=50)
@@ -22,6 +24,7 @@ class Users(models.Model):
 
 
 class Daily_reports(models.Model):
+    id = models.AutoField(primary_key=True)
     user_id = models.ForeignKey(Users, on_delete=models.CASCADE)
     progress = models.TextField()
     problems = models.TextField()
