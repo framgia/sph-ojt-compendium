@@ -1,5 +1,5 @@
 import React from "react";
-import "./STYLE_CREATE_DAILY_REPORT.css";
+import "./StyleCreate.css";
 import {
   Button,
   Divider,
@@ -9,7 +9,7 @@ import {
   Input,
 } from "semantic-ui-react";
 
-export default function CREATE_DAILY_REPORT() {
+export default function CreateReport() {
   return (
     <div className="flexbox">
       <div className="button_back">
