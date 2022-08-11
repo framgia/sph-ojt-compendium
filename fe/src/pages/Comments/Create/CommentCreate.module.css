@@ -1,0 +1,86 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.FlexBox {
+  margin-left: auto;
+  margin-right: auto;
+  height: 1024px;
+  width: 1440px;
+}
+.font {
+  font-size: 50px;
+  font-weight: bold;
+}
+.primary {
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 80px;
+}
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 2px solid #000000;
+  background-color: white;
+  width: 1285px;
+  min-height: xxx;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.text{ /*progress*/
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-top: 60px;
+  text-align: left;
+}
+ .text2{  /*date*/
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-top: 50px;
+  text-align: left;
+}
+.text3 { /*problems, learnings, plan*/
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 5px;
+  padding-top: 15px;
+  text-align: left;
+}
+.ButtonSubmit {
+  width: 150.25px;
+  height: 46.49px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-left: 1030px;
+  margin-bottom: 30px;
+}
+.DateInput {
+  float: left;
+  padding-left: 10px;
+}
+.ButtonBack {
+  float: left;
+  padding-left: 25px;
+  padding-top: 10px;
+}
+.ButtonFont {
+  font-weight: bold;
+}
