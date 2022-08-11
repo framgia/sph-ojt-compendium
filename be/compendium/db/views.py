@@ -1,19 +1,15 @@
 from .models import Daily_reports
 from .serializers import DailyReportSerializer
 
+from rest_framework import generics
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from django.shortcuts import get_object_or_404
 
-# class DailyReportListAPIView(generics.ListAPIView):
-#     queryset = Daily_reports.objects.all()
-#     serializer_class = DailyReportSerializer
-
-# daily_report_list_view = DailyReportListAPIView.as_view()
-
-@api_view(["GET"])
-def daily_report_list_view(request, *args, **kwargs):
+class DailyReportListCreateAPIView(generics.ListCreateAPIView):
     queryset = Daily_reports.objects.all()
-    data = DailyReportSerializer(queryset, many=True).data
-    return Response(data)
+    serializer_class = DailyReportSerializer
 
-
+class DailyReportRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Daily_reports.objects.all()
+    serializer_class = DailyReportSerializer
+    lookup_field = 'pk'

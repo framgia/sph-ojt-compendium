@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from db import views
+from db.views import DailyReportListCreateAPIView, DailyReportRetrieveUpdateDestroyAPIView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('dailyReports/', views.daily_report_list_view),
+    path('dailyReports/', DailyReportListCreateAPIView.as_view()),
+    path('dailyReports/<int:pk>/', DailyReportRetrieveUpdateDestroyAPIView.as_view()),
 ]
