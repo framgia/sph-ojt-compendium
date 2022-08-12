@@ -1,5 +1,4 @@
 from contextlib import nullcontext
-from doctest import BLANKLINE_MARKER
 from tkinter import CASCADE
 from django.db import models
 
