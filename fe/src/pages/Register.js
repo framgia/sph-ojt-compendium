@@ -1,49 +1,51 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Form, Grid, Header, Button, Icon, Container } from 'semantic-ui-react';
-import { options, srcLogo } from '../actions/types';
-import _ from 'lodash';
+import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route, useNavigate } from 'react-router-dom';
+import {
+  Form,
+  Grid,
+  Header,
+  Button,
+  Container,
+  Image,
+} from 'semantic-ui-react';
+
+import { Link } from 'react-router-dom';
 
 const RegisterUI = () => {
-  // to get data entered
   const [firstName, setFirstName] = useState('');
   const [middleName, setMiddleName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [school, setSchool] = useState('');
   const [birthdate, setBirthdate] = useState('');
-  const [sex, setSex] = useState(''); //still cannot get data of dropdown (need more knowledge)
+  const [sex, setSex] = useState('');
 
   const [success, setSuccess] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log('Firstname: ', firstName);
-    console.log('Middlename: ', middleName);
-    console.log('Lastname: ', lastName);
-    console.log('Email: ', email);
-    console.log('Password: ', password);
-    console.log('Birthdate: ', birthdate);
-    console.log('Sex: ', sex);
-
+    navigate('/register-success');
     setSuccess(true);
   };
 
   return (
     <>
       {success ? (
-        <section>
-          <h1>Success!</h1>
-          <p>{/* react router */}</p>
-        </section>
+        <section>sucess!</section>
       ) : (
         <section>
           <Grid centered stackable columns={2} padded>
             <Grid.Row>
               <Grid.Column width={8}>
-                <Container textAlign="center">
-                  <Container>Have an account?</Container>
-                  <Button>Login</Button>
+                <Container fluid textAlign="center">
+                  <Container>Have an Account?</Container>
+                  <Link to="/login" className="item">
+                    <Button>Login</Button>
+                  </Link>
+                  <Image src="/images/logo.png" centered></Image>
                 </Container>
               </Grid.Column>
 
@@ -55,7 +57,6 @@ const RegisterUI = () => {
                     required
                     label="First name"
                     placeholder="First name"
-                    aria-describedby="firstname"
                     onChange={(e) => setFirstName(e.target.value)}
                   />
                   <Form.Input
@@ -63,7 +64,6 @@ const RegisterUI = () => {
                     required
                     label="Middle name"
                     placeholder="Middle name"
-                    aria-describedby="middletname"
                     onChange={(e) => setMiddleName(e.target.value)}
                   />
                   <Form.Input
@@ -71,8 +71,15 @@ const RegisterUI = () => {
                     required
                     label="Last name"
                     placeholder="Last name"
-                    aria-describedby="lastname"
                     onChange={(e) => setLastName(e.target.value)}
+                  />
+                  <Form.Input
+                    fluid
+                    required
+                    label="School"
+                    placeholder="School"
+                    type="text"
+                    onChange={(e) => setSchool(e.target.value)}
                   />
                   <Form.Input
                     fluid
@@ -80,19 +87,21 @@ const RegisterUI = () => {
                     label="Email"
                     placeholder="example@example.com"
                     type="email"
-                    aria-describedby="email"
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   <Form.Input
                     fluid
                     required
-                    action="show"
                     label="Password"
                     placeholder="Password"
                     type="password"
-                    aria-describedby="password"
                     onChange={(e) => setPassword(e.target.value)}
                   />
+                  {password.length < 6 ? (
+                    <p>Password too short.</p>
+                  ) : (
+                    <p>Okay!</p>
+                  )}
                   <Grid columns={2} relaxed="very">
                     <Grid.Column relaxed="very">
                       <Form.Input
@@ -100,23 +109,20 @@ const RegisterUI = () => {
                         required
                         label="Birthdate"
                         type="date"
-                        aria-describedby="birthdate"
                         onChange={(e) => setBirthdate(e.target.value)}
                       />
                     </Grid.Column>
                     <Grid.Column relaxed="very">
-                      <Form.Select
+                      <Form.Input
                         fluid
                         required
                         label="Sex"
-                        options={options}
                         placeholder="Sex"
-                        aria-describedby="sex"
                         onChange={(e) => setSex(e.target.value)}
                       />
                     </Grid.Column>
                   </Grid>
-                  <Button>CREATE!</Button>
+                  <Button fluid>CREATE!</Button>
                 </Form>
               </Grid.Column>
             </Grid.Row>

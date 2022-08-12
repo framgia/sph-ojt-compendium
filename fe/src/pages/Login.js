@@ -1,9 +1,16 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Form, Grid, Header, Button, Container } from 'semantic-ui-react';
-import _ from 'lodash';
+import React, { useState } from 'react';
+import {
+  Form,
+  Grid,
+  Header,
+  Button,
+  Container,
+  Image,
+  Icon,
+} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 const LoginUI = () => {
-  // to get data entered
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [success, setSuccess] = useState(false);
@@ -20,12 +27,12 @@ const LoginUI = () => {
   return (
     <>
       {success ? (
-        <section>
+        <Container>
           <h1>Home Page or Profile Page</h1>
-          <p>{/* react router */}</p>
-        </section>
+          <p>This is where the dashboard or homepage should go</p>
+        </Container>
       ) : (
-        <section>
+        <Container>
           <Grid centered stackable columns={2} padded>
             <Grid.Row>
               <Grid.Column width={8}>
@@ -37,32 +44,33 @@ const LoginUI = () => {
                     label="Email"
                     placeholder="example@example.com"
                     type="email"
-                    aria-describedby="email"
                     onChange={(e) => setEmail(e.target.value)}
                   />
                   <Form.Input
                     fluid
                     required
-                    action="show"
                     label="Password"
                     placeholder="Password"
                     type="password"
-                    aria-describedby="password"
                     onChange={(e) => setPassword(e.target.value)}
                   />
-                  <Button>Login</Button>
+
+                  <Button type="submit">Login</Button>
                 </Form>
               </Grid.Column>
 
               <Grid.Column width={8}>
                 <Container textAlign="center">
-                  <Container>Have an account?</Container>
-                  <Button>Login</Button>
+                  <Container>Need an Account?</Container>
+                  <Link to="/register">
+                    <Button>Register</Button>
+                  </Link>
+                  <Image src="/images/logo.png" centered></Image>
                 </Container>
               </Grid.Column>
             </Grid.Row>
           </Grid>
-        </section>
+        </Container>
       )}
     </>
   );
