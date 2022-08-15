@@ -1,8 +1,16 @@
 from rest_framework import serializers
-
 from .models import Daily_reports
 
-class DailyReportSerializer(serializers.ModelSerializer):
+class DailyReportSerializerPost(serializers.ModelSerializer):
+    user_id = serializers.IntegerField()
     class Meta:
         model = Daily_reports
-        fields = Daily_reports.get_fields()
+        fields = (
+            'user_id',
+            'date_created',
+            'progress',
+            'problems',
+            'learnings',
+            'plans',
+            'rate_for_value_delivered', 
+        )
