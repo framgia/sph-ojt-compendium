@@ -2,9 +2,8 @@ from tkinter import CASCADE
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
+
 # Create your models here.
-
-
 class Accounts(models.Model):
     email = models.EmailField(max_length=50)
     password = models.CharField(max_length=50)
@@ -31,10 +30,11 @@ class User(AbstractUser):
 class Daily_reports(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     progress = models.TextField()
-    problems = models.TextField(default=0)
+    problems = models.TextField(blank=True, null=True)
     learnings = models.TextField()
     plans = models.TextField()
     date_created = models.DateTimeField(auto_now=True)
-    last_updated = models.DateTimeField(auto_now=True)
-    date_deleted = models.DateTimeField(auto_now=True)
-    rate_for_value_delivered = models.IntegerField(default=0)
+    last_updated = models.DateTimeField(auto_now=True, null=True)
+    date_deleted = models.DateTimeField(null=True, blank=True)
+    rate_for_value_delivered = models.IntegerField(
+        default=0, null=True, blank=True)

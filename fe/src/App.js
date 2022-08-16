@@ -1,16 +1,35 @@
-import "./App.css";
-import CreateReport from "./pages/Comments/Create/CommentCreate";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-function App() {
+import React from 'react';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import RegisterSuccess from './pages/RegisterSuccess';
+import Home from './pages/Home';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CreateReport from './pages/Comments/Create/CommentCreate';
+
+const App = () => {
   return (
-    <Router>
-      <div className="App">
-        <Switch>
-          <Route path="/reports/create"></Route>
-          <CreateReport />
-        </Switch>
-      </div>
-    </Router>
+    <div className="ui container">
+      <BrowserRouter>
+        <div>
+          <Routes>
+            <Route path="/" exact element={<Home />}></Route>
+            <Route path="/login" exact element={<Login />}></Route>
+            <Route path="/register" exact element={<Register />}></Route>
+            <Route
+              path="/register-success"
+              exact
+              element={<RegisterSuccess />}
+            ></Route>
+            <Route
+              path="/reports/create"
+              exact
+              element={<CreateReport />}
+            ></Route>
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </div>
   );
-}
+};
+
 export default App;
