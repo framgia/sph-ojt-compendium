@@ -15,8 +15,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Accounts',
             fields=[
-                ('id', models.AutoField(auto_created=True,
-                 primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('email', models.EmailField(max_length=50)),
                 ('password', models.CharField(max_length=50)),
             ],
@@ -24,8 +23,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Users',
             fields=[
-                ('id', models.AutoField(auto_created=True,
-                 primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('first_name', models.CharField(max_length=50)),
                 ('middle_name', models.CharField(max_length=50)),
                 ('last_name', models.CharField(max_length=50)),
@@ -33,15 +31,13 @@ class Migration(migrations.Migration):
                 ('birth_date', models.DateTimeField(auto_now=True)),
                 ('sex', models.CharField(max_length=6)),
                 ('school', models.CharField(max_length=50)),
-                ('account_id', models.ForeignKey(
-                    on_delete=django.db.models.deletion.CASCADE, to='db.Accounts')),
+                ('account_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='db.Accounts')),
             ],
         ),
         migrations.CreateModel(
             name='Daily_reports',
             fields=[
-                ('id', models.AutoField(auto_created=True,
-                 primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('progress', models.TextField()),
                 ('problems', models.TextField(default=0)),
                 ('learnings', models.TextField()),
@@ -50,8 +46,7 @@ class Migration(migrations.Migration):
                 ('last_updated', models.DateTimeField(auto_now=True)),
                 ('date_deleted', models.DateTimeField(auto_now=True)),
                 ('rate_for_value_delivered', models.IntegerField(default=0)),
-                ('user_id', models.ForeignKey(
-                    on_delete=django.db.models.deletion.CASCADE, to='db.Users')),
+                ('user_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='db.Users')),
             ],
         ),
     ]
