@@ -1,6 +1,5 @@
 from contextlib import nullcontext
 from tkinter import CASCADE
-from typing import List
 from django.db import models
 
 
@@ -20,7 +19,8 @@ class Users(models.Model):
     sex = models.CharField(max_length=6, null=True, blank=True)
     school = models.CharField(max_length=50, null=True, blank=True)
 
-class Daily_reports(BaseModel):
+
+class Daily_reports(models.Model):
     user_id = models.ForeignKey(Users, on_delete=models.CASCADE)
     progress = models.TextField()
     problems = models.TextField(blank=True, null=True)

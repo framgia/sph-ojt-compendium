@@ -14,3 +14,16 @@ class DailyReportSerializerPost(serializers.ModelSerializer):
             'plans',
             'rate_for_value_delivered', 
         )
+
+class DailyReportSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Daily_reports
+        fields = (
+            'user_id',
+            'date_created',
+            'progress',
+            'problems',
+            'learnings',
+            'plans',
+            'rate_for_value_delivered', 
+        )

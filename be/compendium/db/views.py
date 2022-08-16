@@ -1,10 +1,10 @@
 
 from django.shortcuts import render
-from rest_framework.generics import GenericAPIView
+from rest_framework.generics import GenericAPIView, ListAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import Daily_reports, Users
-from .serializers import DailyReportSerializerPost
+from .serializers import DailyReportSerializerPost, DailyReportSerializer
 
 # Create your views here.
 
@@ -20,12 +20,12 @@ class DailyReportAPIView(GenericAPIView):
             return Response({'status': 200})
         else:
             return Response(serializer.errors)
-            
-class DailyReportListCreateAPIView(generics.ListCreateAPIView):
+
+class DailyReportListAPIView(ListAPIView):
     queryset = Daily_reports.objects.all()
     serializer_class = DailyReportSerializer
 
-class DailyReportRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+class DailyReportRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Daily_reports.objects.all()
     serializer_class = DailyReportSerializer
     lookup_field = 'pk'
