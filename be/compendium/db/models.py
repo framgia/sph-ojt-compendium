@@ -16,7 +16,7 @@ class User(AbstractUser):
     middle_name = models.CharField(max_length=50, null=True, blank=True)
     last_name = models.CharField(max_length=50)
     email = models.CharField(max_length=50, unique=True)
-    birth_date = models.DateField(null=True, blank=True, default=0)
+    birth_date = models.DateField(null=True, blank=True)
     sex = models.CharField(max_length=6, null=True, blank=True)
     school = models.CharField(max_length=50, null=True, blank=True)
 
