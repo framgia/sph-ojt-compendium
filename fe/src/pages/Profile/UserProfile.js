@@ -11,6 +11,7 @@ import {
   Button,
   Pagination,
 } from "semantic-ui-react";
+import DeleteDailyReport from "../DailyReport/DeleteDailyReport";
 
 export default function UserProfile() {
   const navigate = useNavigate();
@@ -100,6 +101,7 @@ export default function UserProfile() {
                 <div className={style.dailyreport}>
                   <h1 className={style.date}>Date:</h1>
                   <h1 className={style.content}>Input date Here</h1>
+                  <div className={style.buttonDelete}><DeleteDailyReport/></div> 
                   <h1 className={style.input}>Progress:</h1>
                   <h1 className={style.content}>Input Progress Here</h1>
                   <h1 className={style.input}>Problems:</h1>
