@@ -5,6 +5,7 @@ import RegisterSuccess from './pages/RegisterSuccess';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';
+import DummyListPage from './pages/DummyListPage';
 
 const App = () => {
   return (
@@ -24,6 +25,11 @@ const App = () => {
               path="/reports/create"
               exact
               element={<CreateReport />}
+            ></Route>
+             <Route
+              path="/dailyReports"
+              exact
+              element={<DummyListPage />}
             ></Route>
           </Routes>
         </div>
