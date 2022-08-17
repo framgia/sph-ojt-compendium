@@ -1,0 +1,64 @@
+html,
+body,
+#root,
+.App {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.FlexBox {
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 1024px;
+  width: 1440px;
+}
+.Sidebar {
+  height: 750px;
+}
+.WholeScreen {
+  background-color: gray;
+}
+.Picture {
+  margin-top: 47px;
+  margin-left: 50px;
+}
+.NameFont {
+  text-align: center;
+}
+.HomeStyle {
+  padding-top: 50px;
+}
+.OtherStyle {
+  padding-bottom: 50px;
+}
+.LogoutStyle {
+  padding-top: 150px;
+}
+.dailyreportstyle {
+  padding-top: 50px;
+}
+.ButtonReports {
+  margin-left: 40px;
+  text-align: center;
+  left: 371px;
+  top: 254px;
+  border-radius: 15px;
+  padding: 40px 60px;
+  border: 2px solid #000000;
+}
+.boxtrial {
+  width: 1200px;
+  height: 750px;
+}
+.paginationstyle {
+  margin-top: 30px;
+  margin-left: 350px;
+}
