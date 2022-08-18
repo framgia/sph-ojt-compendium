@@ -99,9 +99,9 @@ export default function UserProfile() {
                 />
                 <h1 className={style.ReportHistory}>Daily Report History</h1>
                 <div className={style.dailyreport}>
+                  <div className={style.buttonDelete}><DeleteDailyReport/></div> 
                   <h1 className={style.date}>Date:</h1>
                   <h1 className={style.content}>Input date Here</h1>
-                  <div className={style.buttonDelete}><DeleteDailyReport/></div> 
                   <h1 className={style.input}>Progress:</h1>
                   <h1 className={style.content}>Input Progress Here</h1>
                   <h1 className={style.input}>Problems:</h1>
