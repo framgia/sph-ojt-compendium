@@ -16,7 +16,9 @@ const NavBar = ({ text }) => {
       <Breakline />
       <div className="routes">
         <Button text="Dashboard" />
-        <Button text="Interns" />
+        <Link to="/Intern-Profile">
+          <Button text="Interns" />
+        </Link>
         <Button text="Daily Report" />
         <Link to="/User-Profile">
           <Button text="User Profile" />
