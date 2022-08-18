@@ -1,5 +1,6 @@
 import React from 'react';
-import Register from './pages/Register';
+import Register from './Register/Register';
+// import Register from './pages/Register';
 // import Login from './pages/Login';
 import RegisterSuccess from './pages/RegisterSuccess';
 import Home from './pages/Home';

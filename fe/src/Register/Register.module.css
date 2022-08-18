@@ -3,21 +3,22 @@
 h1 {
   font-family: 'Inter', sans-serif;
   font-size: 60px;
-  margin-right: 400px;
+  margin-left: -100px;
 
 }
 
 .column {
-  float: left;
+  float: ;
   width: 50%;
   height: 100%;
+  background-color: #d9d9d9;
   text-align: center;
 }
 
 
 .columnright {
-  background-color: #d9d9d9;
-  float: left;
+
+  float: right;
   width: 50%;
 }
 
@@ -25,6 +26,7 @@ h1 {
   vertical-align: middle;
   align-items: center;
   justify-content: center;
+  margin-left: 250px;
 }
 
 /* Clear floats after the columns */
@@ -52,7 +54,7 @@ h1 {
 
 .image {
   position: absolute;
-  right: 250px;
+  left: 250px;
   bottom: 100px;
 }
 
@@ -73,7 +75,7 @@ div.middle {
 .button {
   position: absolute;
   top: 70%;
-  right: 370px;
+  left: 390px;
   border-radius: 5px;
   height: 50px;
   width: 204px;
@@ -86,18 +88,19 @@ div.middle {
 .button2 {
   position: absolute;
   top: 100%;
-  right: 370px;
-  font-weight: bold;
+  right: 325px;
   border-radius: 5px;
   height: 50px;
   width: 204px;
+  font-weight: bold;
+  background-color: rgb(175, 173, 173);
   font-size: 20px;
   border-width: 2px;
 }
 
 .button2:hover {
   cursor: pointer;
-  background-color: gray;
+  background-color: rgb(252, 252, 252);
 }
 
 .button:hover {
