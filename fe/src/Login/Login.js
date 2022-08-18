@@ -18,11 +18,12 @@ const Login = () => {
                 <InputField placeholder="Password" />
                 <Breakline></Breakline>
                 <div>
-                  <button className={style.button2}> LOGIN </button>
+                  <Link to="/recent">
+                    <button className={style.button2}> LOGIN </button>
+                  </Link>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import Register from './Register/Register';
 import RegisterSuccess from './RegisterSuccess/RegisterSuccess';
-import Home from './pages/Home';
+import Home from './Home/Home';
 import Login from './Login/Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';

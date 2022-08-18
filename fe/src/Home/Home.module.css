@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap');
+
+.container {
+  background-color: #d9d9d9;
+  height: 870px;
+  width: 100%;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.colorbody {
+  background-color: #d9d9d9;
+
+}
+
+div.outer {
+  background-color: white;
+  height: 80px;
+  width: 100%;
+}
+
+
+
+.position {
+  padding-top: 250px;
+  margin-left: 28%;
+}
+
+.button {
+  position: absolute;
+  margin-top: 20px;
+  height: 45px;
+  left: 81%;
+  width: 90px;
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.button2 {
+  position: absolute;
+  margin-top: 20px;
+  height: 45px;
+  left: 87%;
+  width: 100px;
+  background: #D9D9D9;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button2:hover {
+  cursor: pointer;
+  background-color: gray;
+}
