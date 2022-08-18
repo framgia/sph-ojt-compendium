@@ -4,3 +4,7 @@
 /be/compendium/db/migrations/__pycache__
 /be/venv
 /be/.venv
+/fe/package.json
+/fe/package-lock.json
+/fe/src/Register/package.json
+/fe/src/Login/package.json

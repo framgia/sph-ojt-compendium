@@ -43,7 +43,9 @@ const Register = () => {
 
                 <Breakline></Breakline>
                 <div>
-                  <button className={style.button2}> CREATE! </button>
+                  <Link to="/register-success" className="item">
+                    <button className={style.button2}> CREATE! </button>
+                  </Link>
                 </div>
               </div>
             </div>
