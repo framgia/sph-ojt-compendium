@@ -5,16 +5,20 @@ import RegisterSuccess from './pages/RegisterSuccess';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';
+import Dashboard from './pages/Dashboard';
+import UserProfile from './pages/Profile/UserProfile';
 
 const App = () => {
   return (
-    <div className="ui container">
+ 
       <BrowserRouter>
         <div>
           <Routes>
             <Route path="/" exact element={<Home />}></Route>
             <Route path="/login" exact element={<Login />}></Route>
             <Route path="/register" exact element={<Register />}></Route>
+            <Route path="/profile" element={<UserProfile />} />
+            <Route path="/reports/create" element={<CreateReport />} />
             <Route
               path="/register-success"
               exact
@@ -25,10 +29,16 @@ const App = () => {
               exact
               element={<CreateReport />}
             ></Route>
+             <Route
+              path="/recent/:nav"
+              exact
+              element={<Dashboard />}
+            ></Route>
+
           </Routes>
         </div>
       </BrowserRouter>
-    </div>
+
   );
 };
 

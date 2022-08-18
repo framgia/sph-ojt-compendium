@@ -1,0 +1,49 @@
+.nav{
+    background-color: #D9D9D9;
+    flex: 1;
+    padding-top: 45px;
+    text-align: center;
+   
+}
+
+.avatar{
+    width: 249px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.name{
+    display: flex;
+    padding-top: 11px;
+    font-size: 35px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    margin-bottom: 50px;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logout {
+   position: relative; 
+   display: flex;
+   justify-content: flex-start;
+   padding-left: 23%;
+   margin-top: 25vh;
+}
+
+.logout span{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto";
+    padding-top: 22px;
+    padding-bottom: 22px;
+   
+}
+
+.logout img{
+    padding-right: 20px;
+}
+
+
