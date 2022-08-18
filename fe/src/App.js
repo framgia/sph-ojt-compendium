@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';
 
+
 const App = () => {
   return (
     <div className="ui container">

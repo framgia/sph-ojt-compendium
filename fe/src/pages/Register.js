@@ -12,6 +12,7 @@ import {
 import { Link } from 'react-router-dom';
 
 const RegisterUI = () => {
+  const [userName, setUserName] = useState('');
   const [firstName, setFirstName] = useState('');
   const [middleName, setMiddleName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -52,6 +53,13 @@ const RegisterUI = () => {
               <Grid.Column width={8}>
                 <Header size="huge">Sign Up</Header>
                 <Form unstackable onSubmit={handleSubmit}>
+                  <Form.Input
+                    fluid
+                    required
+                    label="Username"
+                    placeholder="Username"
+                    onChange={(e) => setUserName(e.target.value)}
+                  />
                   <Form.Input
                     fluid
                     required
