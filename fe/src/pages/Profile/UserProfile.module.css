@@ -83,6 +83,10 @@ body,
 .buttonCreate {
   padding-top: 100px;
 }
+.buttonEdit {
+  padding-top: 20px;
+  padding-left: 375px;
+}
 .date {
   font-size: 20px;
   font-weight: bolder;

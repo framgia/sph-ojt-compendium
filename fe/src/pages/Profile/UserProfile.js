@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import style from "./UserProfile.module.css";
+import EditDailyReport from "../DailyReport/EditDailyReport"
 import {
   Icon,
   Image,
@@ -98,6 +99,7 @@ export default function UserProfile() {
                 />
                 <h1 className={style.ReportHistory}>Daily Report History</h1>
                 <div className={style.dailyreport}>
+                  <h1 className={style.buttonEdit}><EditDailyReport /></h1>
                   <h1 className={style.date}>Date:</h1>
                   <h1 className={style.content}>Input date Here</h1>
                   <h1 className={style.input}>Progress:</h1>
