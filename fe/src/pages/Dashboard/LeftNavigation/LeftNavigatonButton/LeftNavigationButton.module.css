@@ -1,0 +1,29 @@
+.navbutton{
+    display: flex;
+   justify-content: flex-start;
+   padding-left: 23%;
+}
+
+.navbutton span{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Roboto";
+    padding-top: 22px;
+    padding-bottom: 22px;
+   
+}
+
+.navbutton img{
+    padding-right: 20px;
+}
+
+.navbutton:hover{
+    color: black;
+    background-color: #B1B1B1;
+}
+
+.navbutton:focus{
+    color: black;
+    background-color: #B1B1B1;
+}
