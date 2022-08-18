@@ -1,0 +1,6 @@
+.content{
+    display: flex;
+    background-color: white;
+    flex: 5;
+    justify-content: center;
+}

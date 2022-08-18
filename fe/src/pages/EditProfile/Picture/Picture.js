@@ -3,6 +3,7 @@ import styles from './Picture.module.css';
 import DisplayText from '../../userprofile/components/displaytext/DisplayText';
 import BtnNavigate from '../../userprofile/components/button/BtnNavigate';
 import BackArrow from '../components/BackArrow/BackArrow';
+
 const Picture = () => {
   return (
     <div className={styles.pictureCenter}>
