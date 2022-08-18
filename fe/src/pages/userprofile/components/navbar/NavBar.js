@@ -16,11 +16,11 @@ const NavBar = ({ text }) => {
       <Breakline />
       <div className="routes">
         <Button text="Dashboard" />
-        <Link to="/Intern-Profile">
+        <Link to="/profile/id">
           <Button text="Interns" />
         </Link>
         <Button text="Daily Report" />
-        <Link to="/User-Profile">
+        <Link to="/profile">
           <Button text="User Profile" />
         </Link>
         <Breakline />

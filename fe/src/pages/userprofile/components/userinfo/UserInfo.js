@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BtnNavigate from '../button/BtnNavigate';
 import DisplayText from '../displaytext/DisplayText';
 import ReportsHistory from '../reportshistory/ReportsHistory';
@@ -14,7 +15,9 @@ const UserInfo = ({ text, btnText }) => {
         <DisplayText text="School: School here" />
       </div>
       <div className={styles.btnPos}>
-        <BtnNavigate btnText="Edit Profile" />
+        <Link to="/edit/profile">
+          <BtnNavigate btnText="Edit Profile" />
+        </Link>
       </div>
       <div className={styles.boxPos}>
         <ReportsHistory />

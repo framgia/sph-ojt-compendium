@@ -54,7 +54,6 @@ const ReportsHistory = (props) => {
         <Pagination defaultActivePage={5} totalPages={10} />
       </div>
     </div>
-    // <h1>Reports Section:</h1>
   );
 };
 
