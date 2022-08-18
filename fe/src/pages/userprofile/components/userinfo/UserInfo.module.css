@@ -1,0 +1,14 @@
+.userInfo {
+  position: absolute;
+  padding-left: 392px;
+  padding-top: 60px;
+}
+
+.btnPos {
+  float: right;
+  padding-top: 60px;
+}
+
+.size {
+  width: 1600px;
+}

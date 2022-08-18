@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
+.btnNavigate {
+  width: 154px;
+  height: 24px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  font-size: 15px;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.btnNavigate:hover {
+  cursor: pointer;
+  background-color: #a8a6a6;
+}
