@@ -11,7 +11,7 @@
     font-family: "Roboto";
     padding-top: 22px;
     padding-bottom: 22px;
-   
+    cursor:default;
 }
 
 .navbutton img{

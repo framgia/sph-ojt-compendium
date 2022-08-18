@@ -9,13 +9,12 @@ import { useLocation } from 'react-router';
 const Dashboard = () => {
 
     const location = useLocation();
-    console.log(location);
-
+    var content = location.pathname.split('/')[2].toString();
   
     return (
         <div className={style.container}>
             <LeftNavigation />
-            <DashboardContent/>
+            <DashboardContent dashboardContent={content}/>
         </div>
     );
 }

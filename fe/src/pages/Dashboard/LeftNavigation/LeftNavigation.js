@@ -14,14 +14,16 @@ const LeftNavigation = ({showSpecificContent}) => {
     var name = "David Panonce";
 
     return (
+
         <div className={style.nav}>
+
             <img src={Avatar} alt="avatar" className={style.avatar}></img>
             <p className={style.name}>{name}</p>
 
             <LeftNavigationButton icon={DashboardIcon} label="Dashboard"/> 
             <LeftNavigationButton icon={InternsIcon} label="Interns"/>
-            <LeftNavigationButton icon={ReportsIcon} label="Daily-Report" />
-            <LeftNavigationButton icon={ProfileIcon} label="User-Profile" />
+            <LeftNavigationButton icon={ReportsIcon} label="Daily Report" />
+            <LeftNavigationButton icon={ProfileIcon} label="User Profile" />
 
             
             <a href='#Logout' className={style.logout}>  
