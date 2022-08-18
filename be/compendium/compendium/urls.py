@@ -17,4 +17,5 @@ urlpatterns = [
     path('dailyReports/<int:pk>/',
          DailyReportRetrieveUpdateDestroyAPIView.as_view()),
     path('daily-report/create/', DailyReportAPIView.as_view()),
+    path('daily-report/<int:pk>/delete', DailyReportRetrieveUpdateDestroyAPIView.as_view()),
 ]
