@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from "axios";
 import {
   Form,
   Grid,
@@ -11,37 +10,18 @@ import {
 import { Link } from 'react-router-dom';
 
 const LoginUI = () => {
-
-  const [user, setUser] = useState({
-    email: '',
-    password: '',
-  })
-
-  // const [email, setEmail] = useState('');
-  // const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!user) {
-      console.log('invalid input')
-    } else {
-      const login = {
-        email: user.email,
-        password: user.password
-      }
-      axios
-        .post("http://127.0.0.1:8000/token/login", { login })
 
-
-        .then((res) => localStorage.setItem("token", res.data.token))
-        .catch((err) => console.error(err));
-    }
+    console.log('Email: ', email);
+    console.log('Password: ', password);
 
     setSuccess(true);
-
   };
-
 
   return (
     <>
@@ -63,7 +43,7 @@ const LoginUI = () => {
                     label="Email"
                     placeholder="example@example.com"
                     type="email"
-                    onChange={(e) => setUser(e.target.value)}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                   <Form.Input
                     fluid
@@ -71,7 +51,7 @@ const LoginUI = () => {
                     label="Password"
                     placeholder="Password"
                     type="password"
-                    onChange={(e) => setUser(e.target.value)}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
 
                   <Button type="submit">Login</Button>

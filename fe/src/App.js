@@ -1,8 +1,9 @@
 import React from 'react';
 import Register from './pages/Register';
-import Login from './pages/Login';
+// import Login from './pages/Login';
 import RegisterSuccess from './pages/RegisterSuccess';
 import Home from './pages/Home';
+import Login from './Login/Login';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';
 
