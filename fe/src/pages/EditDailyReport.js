@@ -1,15 +1,19 @@
 import React from 'react';
-import { Button, Form, TextArea, Icon, Input } from 'semantic-ui-react';
+import { Form, TextArea, Icon, Input } from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 import styles from './Comments/Create/CommentCreate.module.css';
+import EditReportModal from './Modal/EditReportModal';
 
-const UpdateDailyReport = () => {
+const EditDailyReport = () => {
   return (
     <div className={styles.FlexBox}>
       <div className={styles.ButtonBack}>
-        <Icon link name="arrow left" size="big" />
+        <Link to="/profile" className="item">
+          <Icon link name="arrow left" size="big" />
+        </Link>
       </div>
       <div className={styles.primary}>
-        <h1 className={styles.font}>Update Daily Report</h1>
+        <h1 className={styles.font}>Edit Daily Report</h1>
       </div>
       {
         <div className={styles.box}>
@@ -34,9 +38,7 @@ const UpdateDailyReport = () => {
             <TextArea placeholder="" />
           </Form>
           <div className={styles.ButtonSubmit}>
-            <Button floated="right" className={styles.ButtonFont}>
-              Submit
-            </Button>
+              <EditReportModal />
           </div>
         </div>
       }
@@ -44,4 +46,4 @@ const UpdateDailyReport = () => {
   );
 };
 
-export default UpdateDailyReport;
+export default EditDailyReport;

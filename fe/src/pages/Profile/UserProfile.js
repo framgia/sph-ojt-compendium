@@ -1,6 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import style from "./UserProfile.module.css";
+import DeleteReportModal from '../Modal/DeleteReportModal';
 import {
   Icon,
   Image,
@@ -98,8 +99,19 @@ export default function UserProfile() {
                 />
                 <h1 className={style.ReportHistory}>Daily Report History</h1>
                 <div className={style.dailyreport}>
+                  <div className={style.buttonED}>
+                    <Link to="/report/edit">
+                    <Button 
+                      floated="center"
+                      content="Edit"/>
+                    </Link>
+                  </div>
+                  <div className={style.buttonED}>
+                    <DeleteReportModal />
+                  </div>
                   <h1 className={style.date}>Date:</h1>
                   <h1 className={style.content}>Input date Here</h1>
+                  
                   <h1 className={style.input}>Progress:</h1>
                   <h1 className={style.content}>Input Progress Here</h1>
                   <h1 className={style.input}>Problems:</h1>

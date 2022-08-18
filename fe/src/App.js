@@ -5,6 +5,7 @@ import RegisterSuccess from './pages/RegisterSuccess';
 import Home from './pages/Home';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';
+import EditReport from './pages/EditDailyReport';
 
 const App = () => {
   return (
@@ -18,13 +19,18 @@ const App = () => {
             <Route
               path="/register-success"
               exact
-              element={<RegisterSuccess />}
-            ></Route>
+              element={<RegisterSuccess />}>
+            </Route>
             <Route
               path="/reports/create"
               exact
-              element={<CreateReport />}
-            ></Route>
+              element={<CreateReport />}>
+            </Route>
+            <Route
+              path="/report/edit"
+              exact
+              element={<EditReport />}>
+            </Route>
           </Routes>
         </div>
       </BrowserRouter>
