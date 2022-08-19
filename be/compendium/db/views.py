@@ -1,4 +1,3 @@
-
 from django.shortcuts import render
 from rest_framework.generics import GenericAPIView, ListAPIView, RetrieveUpdateDestroyAPIView
 from rest_framework.response import Response
@@ -17,12 +16,39 @@ class DailyReportAPIView(GenericAPIView):
         if serializer.is_valid():
             userID = User.objects.get(id=serializer.data['user_id'])
             Daily_reports.objects.create(learnings=serializer.data['learnings'],
+<<<<<<< HEAD
+                    progress=serializer.data['progress'], problems=serializer.data['problems'],
+                    user_id=userID, plans=serializer.data['plans'], rate_for_value_delivered=serializer.data['rate_for_value_delivered'])
+=======
                                          progress=serializer.data['progress'], problems=serializer.data['problems'],
                                          user_id=userID, plans=serializer.data['plans'], rate_for_value_delivered=serializer.data['rate_for_value_delivered'])
+>>>>>>> 75dd03fd5a89b15f18b7ee6bfda555e659e3df77
             return Response({'status': 200})
         else:
             return Response(serializer.errors)
 
+<<<<<<< HEAD
+    def put(self, request, Daily_reports_id, *args, **kwargs):
+        Daily_reports_instance = self.get_object(Daily_reports_id, request.user.id)
+        if not Daily_reports_instance = return Response(
+                {"res": "Object with todo id does not exists"}, 
+                status=status.HTTP_400_BAD_REQUEST
+            )
+            data = {
+                'user_id': request.user.id
+                'progress': request.data.get('progress')
+                'problems': request.data.get('problems')
+                'plans':request.data.get('plans')
+                'learnings':request.data.get('learnings')
+            }
+
+            serializer = DailyReportSerializer(instance = Daily_reports_instance, data=data, partial = True)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status=status.HTTP_200_OK)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+=======
+>>>>>>> 75dd03fd5a89b15f18b7ee6bfda555e659e3df77
 
 class DailyReportListAPIView(ListAPIView):
     queryset = Daily_reports.objects.all()

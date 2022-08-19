@@ -1,0 +1,41 @@
+.title {
+  position: absolute;
+  padding-left: 392px;
+  padding-top: 300px;
+  padding-bottom: 10px;
+}
+
+.btnNew {
+  float: right;
+  padding-top: 300px;
+  width: 0;
+}
+
+.box {
+  margin-left: 392px;
+  margin-top: 350px;
+  border: 2px solid #000000;
+  background-color: white;
+  width: 65%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: absolute;
+}
+
+.history {
+  width: 100%;
+}
+
+.date {
+  width: 25%;
+  height: 40px;
+}
+
+.boxBtn {
+  margin-top: 30px;
+}
+
+.pagination {
+  padding-left: 800px;
+  padding-top: 890px;
+}
