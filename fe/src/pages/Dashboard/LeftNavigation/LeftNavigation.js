@@ -9,7 +9,7 @@ import ReportsIcon from './reports.svg';
 import ProfileIcon from './profile.svg';
 import LogoutIcon from './logout.svg';
 
-const LeftNavigation = ({showSpecificContent}) => {
+const LeftNavigation = () => {
 
     var name = "David Panonce";
 
@@ -18,7 +18,7 @@ const LeftNavigation = ({showSpecificContent}) => {
         <div className={style.nav}>
 
             <img src={Avatar} alt="avatar" className={style.avatar}></img>
-            <p className={style.name}>{name}</p>
+            <span className={style.name}>{name}</span>
 
             <LeftNavigationButton icon={DashboardIcon} label="Dashboard"/> 
             <LeftNavigationButton icon={InternsIcon} label="Interns"/>
@@ -26,7 +26,7 @@ const LeftNavigation = ({showSpecificContent}) => {
             <LeftNavigationButton icon={ProfileIcon} label="User Profile" />
 
             
-            <a href='#Logout' className={style.logout}>  
+            <a href='/' className={style.logout}>  
                 <img src={LogoutIcon} alt="Logout"></img>
                 <span>Logout</span>
             </a>

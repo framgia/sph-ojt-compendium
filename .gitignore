@@ -29,5 +29,4 @@ yarn-error.log*
 /fe/node_modules
 /fe/src/pages/Register/package.json
 /fe/src/pages/Dashboard
-/fe/src/pages/DailyReport
 /fe/src/pages/Comments
