@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';
 import Dashboard from './pages/Dashboard';
 import UserProfile from './pages/Profile/UserProfile';
+import CreateDailyReport from './pages/DailyReport/CreateDailyReport/CreateDailyReport';
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
             <Route path="/login" exact element={<Login />}></Route>
             <Route path="/register" exact element={<Register />}></Route>
             <Route path="/profile" element={<UserProfile />} />
-            <Route path="/reports/create" element={<CreateReport />} />
+            <Route path="/reports/create" element={<CreateDailyReport />} />
             <Route
               path="/register-success"
               exact
