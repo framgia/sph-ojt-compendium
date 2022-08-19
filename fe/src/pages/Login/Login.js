@@ -18,7 +18,7 @@ const Login = () => {
                 <InputField placeholder="Password" />
                 <Breakline></Breakline>
                 <div>
-                  <Link to="/recent">
+                  <Link to="/dashboard/recent">
                     <button className={style.button2}> LOGIN </button>
                   </Link>
                 </div>
@@ -34,7 +34,7 @@ const Login = () => {
           </Link>
           <div className={style.image}>
 
-            <img src='images/logo.png' />
+            <img src='images/logo.png' alt="logo"/>
           </div>
         </div>
       </div>

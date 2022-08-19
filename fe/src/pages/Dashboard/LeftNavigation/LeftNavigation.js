@@ -26,7 +26,7 @@ const LeftNavigation = () => {
             <LeftNavigationButton icon={ProfileIcon} label="User Profile" />
 
             
-            <a href='#Logout' className={style.logout}>  
+            <a href='/' className={style.logout}>  
                 <img src={LogoutIcon} alt="Logout"></img>
                 <span>Logout</span>
             </a>
