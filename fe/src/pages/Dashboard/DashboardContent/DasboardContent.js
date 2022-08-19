@@ -1,10 +1,10 @@
 import React from 'react';
 
 import style from './DashboardContent.module.css';
-import Interns from './Interns';
-import Recent from './Recent';
-import DailyReports from './DailyReports';
-import UserProfile from './UserProfile';
+import Interns from './Interns/Interns';
+import Recent from './Recent/Recent';
+import DailyReports from './DailyReports/DailyReports';
+import UserProfile from './UserProfile/pages/UserProfile';
 
 const DashboardContent = ({dashboardContent}) => {
 
@@ -26,7 +26,7 @@ const DashboardContent = ({dashboardContent}) => {
                 <DailyReports/>   
             </div>
         );
-    }else{
+    } else if(dashboardContent === "user-profile"){
         return (
             <div className={style.content}>
                 <UserProfile/>
