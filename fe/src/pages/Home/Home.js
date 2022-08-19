@@ -16,7 +16,7 @@ const RegisterSuccess = () => {
       <div className={style.middle}>
         <div className={style.container}>
           <div className={style.position}>
-            <img src="/images/logo.png" height={250} />
+            <img src="/images/logo.png" height={250} alt="logo"/>
           </div>
         </div>
       </div>

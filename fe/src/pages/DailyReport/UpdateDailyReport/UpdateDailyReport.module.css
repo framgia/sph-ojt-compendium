@@ -1,0 +1,100 @@
+.container{
+    display:flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.main{
+    display:flex;
+    height: 924px;
+    width: 1314px;
+    flex-direction: column;
+}
+
+.backButton{
+    border: none;
+    background-color: transparent;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.backIcon{
+    width: 70px;
+}
+
+.label{
+    font-size: 50px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.form{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 20px;
+    flex-direction: column;
+    margin: 0px 30px;
+    padding: 50px 50px;
+}
+
+.date{
+    display: flex;
+    flex-direction: column;
+    max-width: 455px;
+    margin-bottom: 30px;
+}
+
+.dateLabel{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.dateField{
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.contentLabel{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.contentField{
+    padding: 15px 15px;
+    border-radius: 10px;
+    resize: vertical;
+    border: 1px solid black;
+}
+.submit{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitButton{
+    padding: 10px 30px;
+    font-weight: 700;
+}
+.text4{
+    margin: 20px 20px;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}

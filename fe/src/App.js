@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import CreateReport from './pages/Comments/Create/CommentCreate';
 import Dashboard from './pages/Dashboard';
 import UserProfile from './pages/Profile/UserProfile';
+import UpdateDailyReport from './pages/DailyReport/UpdateDailyReport/UpdateDailyReport';
 import CreateDailyReport from './pages/DailyReport/CreateDailyReport/CreateDailyReport';
 
 const App = () => {
@@ -33,6 +34,11 @@ const App = () => {
               path="/dashboard/:nav"
               exact
               element={<Dashboard />}
+            ></Route>
+              <Route
+              path="/reports/edit"
+              exact
+              element={<UpdateDailyReport />}
             ></Route>
         </Routes>
       </div>
