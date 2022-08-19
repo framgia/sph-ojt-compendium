@@ -8,7 +8,7 @@ import UserProfile from './UserProfile';
 
 const DashboardContent = ({dashboardContent}) => {
 
-    if(dashboardContent === "dashboard"){
+    if(dashboardContent === "recent"){
         return (
             <div className={style.content}>
                 <Recent/>
