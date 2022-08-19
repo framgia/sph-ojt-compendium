@@ -30,7 +30,7 @@ const App = () => {
               element={<CreateReport />}
             ></Route>
              <Route
-              path="/recent/:nav"
+              path="/dashboard/:nav"
               exact
               element={<Dashboard />}
             ></Route>

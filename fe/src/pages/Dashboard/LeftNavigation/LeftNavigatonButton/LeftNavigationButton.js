@@ -9,7 +9,7 @@ const LeftNavigationButton = ({icon, label}) => {
     const path = label.replace(" ", "-").toLowerCase();
 
     return (
-        <div className={style.navbutton} onClick={()=> navigate(`/recent/${path}`)} tabIndex="0">
+        <div className={style.navbutton} onClick={()=> navigate(`/dashboard/${path}`)} tabIndex="0">
              <img src={icon} alt={label}></img>
             <span>{label}</span>
         </div> 
