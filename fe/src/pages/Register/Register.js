@@ -16,7 +16,6 @@ const Register = () => {
       label: 'Female',
     },
   ];
-
   return (
     <div className={style.row}>
       <div className={style.columnright}>
@@ -32,7 +31,6 @@ const Register = () => {
                 <Dropdown name='Sex'
                   options={genderOptions}
                   defaultValue='Sex'
-
                 />
                 <Breakline></Breakline>
                 <InputField placeholder="Birthdate" type="date" />
@@ -41,7 +39,6 @@ const Register = () => {
                 <Breakline></Breakline>
                 <InputField placeholder="Password" />
                 <Breakline></Breakline>
-
                 <Breakline></Breakline>
                 <div>
                   <Link to="/register-success" className="item">
@@ -50,7 +47,6 @@ const Register = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -60,13 +56,11 @@ const Register = () => {
             <button className={style.button}> LOG IN </button>
           </Link>
           <div className={style.image}>
-
             <img src='images/logo.png' />
           </div>
         </div>
       </div>
     </div >
-
   );
 };
 export default Register;
