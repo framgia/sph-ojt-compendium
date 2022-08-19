@@ -6,6 +6,7 @@ import Input from '../input/Input';
 import styles from './reportsHistory.module.css';
 import Label from '../../labels/Label';
 import BtnNavigate from '../button/BtnNavigate';
+import { Link } from 'react-router-dom';
 
 const ReportsHistory = (props) => {
   return (
@@ -15,7 +16,7 @@ const ReportsHistory = (props) => {
           <DisplayText text="Daily Reports History" />
         </div>
         <div className={styles.btnNew}>
-          <BtnNavigate btnText="Create New" />
+          <Link to="/edit/profile" />
         </div>
         <div className={styles.box}>
           <Grid columns={2} relaxed="very">
